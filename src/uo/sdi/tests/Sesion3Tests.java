@@ -39,6 +39,7 @@ public class Sesion3Tests {
     @Test
     public void testNavegarListadosInbox() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -57,6 +58,7 @@ public class Sesion3Tests {
     @Test
     public void testNavegarListadosHoy() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -76,6 +78,7 @@ public class Sesion3Tests {
     @Test
     public void testNavegarListadosSemana() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -95,6 +98,7 @@ public class Sesion3Tests {
     @Test
     public void testNavegarListadosCategoria() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -115,6 +119,7 @@ public class Sesion3Tests {
     @Test
     public void testEditarCategoria() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -136,6 +141,7 @@ public class Sesion3Tests {
     @Test
     public void testEditarTask() {
     	WebTester browser=new WebTester();
+    	browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
     	browser.beginAt("/");  // Navegar a la URL
     	browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
     	browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
@@ -190,6 +196,7 @@ public class Sesion3Tests {
 	@Test
     public void testNavegarListadosAñadirTareaYFinzalizarTarea() {
 		WebTester browser=new WebTester();
+		browser.setBaseUrl("http://localhost:8280/sesion3.MVCCasero");
 		browser.beginAt("/");  // Navegar a la URL
 		browser.assertFormPresent("validarse_form_name");  // Comprobar formulario está presente
 		browser.setTextField("nombreUsuario", "mary"); // Rellenar primer campo de formulario
